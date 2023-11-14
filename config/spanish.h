@@ -118,6 +118,7 @@
 /* Keyboard @ (At sign) */
 #define ES_AT_SIGN (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_2_AND_AT)))
 #define ES_AT (ES_AT_SIGN)
+#define ES_ARROBA (ES_AT_SIGN)
 
 /* Keyboard 3 and # (Hash/Number) */
 #define ES_NUMBER_3 (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_3_AND_HASH))
