@@ -23,43 +23,44 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  º   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
-// | CAPS |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´  |
-// |   <  |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  |  +  |
-//  | ESC | FUNCTIONS-RET | NUMBERS-TAB |   | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA DEL |
+// |  º   |  Q  |  W  |  F  |  P  |  B  |       |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
+// | CAPS |  A  |  R  |  S  |  T  |  G  |       |  M  |  N  |  E  |  I  |  O  |  ´  |
+// |  <   |  Z  |  X  |  C  |  D  |  V  |       |  K  |  H  |  ,  |  .  |  -  |  +  |
+//  | ESC | FUNCTIONS-RET | NUMBERS-TAB |       | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
                         bindings = <
-   &kp GRAVE &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp MINUS
-   &kp CAPS  &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp APOS
-   &kp NUBS  &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RBKT
- &kp ESC &lt FUNCTIONS RET &lt NUMBERS TAB   &lt SYMBOLS BSPC &lt NAVIGATION SPACE &lt MULTIMEDIA DEL
+
+   &kp ES_ORDINAL &kp ES_Q &kp ES_W &kp ES_F &kp ES_P &kp ES_B     &kp ES_J &kp ES_L  &kp ES_U    &kp ES_Y     &kp ES_ENHE  &kp ES_APOSTROFE
+   &kp ES_CAPS    &kp ES_A &kp ES_R &kp ES_S &kp ES_T &kp ES_G     &kp ES_M &kp ES_N  &kp ES_E    &kp ES_I     &kp ES_O     &kp ES_AGUDO
+   &kp ES_MENOR   &kp ES_Z &kp ES_X &kp ES_C &kp ES_D &kp ES_V     &kp ES_K &kp ES_H  &kp ES_COMA &kp ES_PUNTO &kp ES_MENOS &kp ES_MAS
+          &kp ES_ESC &lt FUNCTIONS ES_INTRO &lt NUMBERS ES_TAB     &lt SYMBOLS BSPC &lt NAVIGATION SPACE &lt MULTIMEDIA DEL
                         >;
                 };
 
                 symbols_layer {
 // -----------------------------------------------------------------------------------------
-// |  º   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
-// | CAPS |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´  |
-// |   <  |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  |  +  |
-//                    | ESC | RET | TAB |   | BSPC | SPACE | DEL |
+// |  ¬  |  /  |  %  |  @  |  "  |  $  |       |     |     |     |     |     |  ¿  |
+// |  ^  |  |  |  &  |  !  |  ?  |  =  |       |     |     |     |     |     |     |
+// |  ·  |  \  |  #  |  ¡  |  ¿  |  €  |       |     |     |     |     |     |     |
+//                    | ESC | RET | TAB |      |     |     |     |
                         bindings = <
-   &kp GRAVE &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp MINUS
-   &kp CAPS  &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp APOS
-   &kp NUBS  &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                  &kp ESC &kp RET &kp TAB   &kp BSPC &kp SPACE &kp DEL
+   &kp ES_NOT      &kp ES_BARRA     &kp ES_PERCENT   &kp ES_ARROBA    &kp ES_COMILLAS &kp ES_DOLLAR       &trans &trans &trans &trans &trans &kp ES_ABRE_INTERROG
+   &kp ES_TILDE    &kp ES_PIPE      &kp ES_AMPERSAND &kp ES_EXCL      &kp ES_QMARK    &kp ES_IGUAL        &trans &trans &trans &trans &trans &kp ES_GRAVE
+   &kp ES_PUNTILLO &kp ES_BARRA_INV &kp ES_HASH      &kp ES_ABRE_EXCL &kp ES_LQMARK   &kp ES_EURO         &trans &trans &trans &trans &trans &trans
+                  &kp ES_ESC &kp ES_INTRO &kp ES_TAB                                                      &trans &trans &trans 
                         >;
                 };
 
                 numbers_layer {
 // -----------------------------------------------------------------------------------------
-// |  º   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
-// | CAPS |  A  |  R  |  S  |  T  |  G  |   |  M  |  N  |  E  |  I  |  O  |  ´  |
-// |   <  |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H  |  ,  |  .  |  -  |  +  |
-//                    | ESC | RET | TAB |   | BSPC | SPACE | DEL |
+// |     |     |     |     |     |     |      |  [  |  7  |  8  |  9  |  /  |  ]  |
+// |     |     |     |     |     |     |      |  (  |  4  |  5  |  6  |  \  |  )  |
+// |     |     |     |     |     |     |      |  {  |  1  |  2  |  3  |  0  |  }  |
+//                   |     |     |     |      | BSPC | SPACE | DEL |
                         bindings = <
-   &kp GRAVE &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp MINUS
-   &kp CAPS  &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp APOS
-   &kp NUBS  &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RBKT
-                  &kp ESC &kp RET &kp TAB   &kp BSPC &kp SPACE &kp DEL
+   &trans &trans &trans &trans &trans &trans     &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
+   &trans &trans &trans &trans &trans &trans     &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
+   &trans &trans &trans &trans &trans &trans     &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
+                        &trans &trans &trans     &kp BSPC &kp SPACE &kp DEL
                         >;
                 };
 
