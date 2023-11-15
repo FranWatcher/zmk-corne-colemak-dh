@@ -312,8 +312,7 @@
 #define ES_COMA (ES_COMMA)
 
 /* Keyboard < (Less Than) */
-#define ES_LESS_THAN (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))
-#define ES_LT (ES_LESS_THAN)
+#define ES_LESS_THAN (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE))
 #define ES_MENOR (ES_LESS_THAN)
 
 /* Keyboard . and > (Period and Greater Than) */
@@ -323,7 +322,7 @@
 
 /* Keyboard > (Greater Than) */
 #define ES_GREATER_THAN                                                                               \
-    (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE)))
+    (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))
 #define ES_GT (ES_GREATER_THAN)
 #define ES_MAYOR (ES_GREATER_THAN)
 
