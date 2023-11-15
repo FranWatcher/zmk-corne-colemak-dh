@@ -44,7 +44,7 @@
 
    &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B       &kp ES_J  &kp ES_L        &kp ES_U        &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
 //   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G       &kp ES_M  &hm RSHFT ES_N  &hm RCTRL ES_E  &hm LATL ES_I  &kp ES_O           &kp ES_AGUDO
-   &kp ES_CAPS     &kp ES_A       &kp ES_R  &kp ES_S     &kp ES_T  &kp ES_G       &kp ES_M  &kp ES_N  &kp ES_E  &kp ES_I  &kp ES_O           &kp ES_AGUDO
+   &kp ES_CAPS     &kp ES_A       &kp ES_R  &kp ES_S     &hm LSHFT ES_T  &kp ES_G       &kp ES_M  &kp ES_N  &kp ES_E  &kp ES_I  &kp ES_O           &kp ES_AGUDO
 //   &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V       &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
    &kp ES_MENOR    &kp ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V       &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &kp ES_MENOS  &kp ES_MAS
                                   &kp ES_ESC     &lt FUNCTIONS ES_INTRO   &lt NUMBERS ES_TAB       &lt SYMBOLS BSPC   &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
