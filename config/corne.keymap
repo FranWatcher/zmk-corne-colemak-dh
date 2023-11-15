@@ -17,6 +17,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include "spanish.h"
 
+
+                &lt {
+                        quick-tap-ms = <300>;
+                };
 / {
 
         behaviors {
@@ -29,10 +33,6 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
-
-                lt: {
-                        quick-tap-ms = <300>;
-                }
             };
 
         keymap {
