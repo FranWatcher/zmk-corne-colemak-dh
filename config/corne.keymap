@@ -106,8 +106,7 @@
 //                          |  ESC  |  RET  | TAB   |            |     |       |       |
                         bindings = <
    &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &trans &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &trans
-//   &kp K_BACK     &kp K_FIND   &kp LATL         &kp LCTRL       &kp LSHFT   &kp K_FORWARD              &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
-   &kp K_BACK     &kp K_FIND   &kp LATL &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN                      &trans &trans       &trans           &trans          &trans       &trans
+   &kp K_BACK     &kp K_FIND   &kp LALT         &kp LCTRL       &kp LSHFT   &kp K_FORWARD              &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
    &kp K_REDO     &kp K_UNDO   &kp K_CUT        &kp K_COPY      &kp BSPC    &kp K_PASTE                &trans &trans       &trans           &trans          &trans       &trans
                                                 &kp ESC         &kp RET     &kp TAB                    &trans &trans       &trans
                         >;
