@@ -77,7 +77,7 @@
 //                   |     |     |     |        | BSPC | SPACE | DEL |
                         bindings = <
    &trans &trans    &trans    &trans     &trans     &trans       &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
-   &trans &trans    &kp LALT  &kp LCTRL  &kb LSHFT  &trans       &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
+   &trans &trans    &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
    &trans &kb LGUI  &trans    &trans     &trans     &trans       &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
                               &trans     &trans     &trans       &kp BSPC &kp SPACE &kp DEL
                         >;
@@ -92,7 +92,7 @@
 //                   |     |     |     |      | BSPC | SPACE | DEL |
                         bindings = <
    &trans &trans    &trans    &trans     &trans     &trans       &trans    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
-   &trans &trans    &kp LALT  &kp LCTRL  &kb LSHFT  &trans       &trans    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
+   &trans &trans    &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &trans    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
    &trans &kb LGUI  &trans    &trans     &trans     &trans       &trans    &kp ES_F1  &kp ES_F2   &kb ES_F3   &kp ES_F10  &kp ES_F13
                               &trans     &trans     &trans       &kp BSPC  &kp SPACE &kp DEL
                         >;
