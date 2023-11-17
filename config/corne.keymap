@@ -20,6 +20,8 @@
 #include "spanish.h"
 
 
+
+
                 &lt {
                         quick-tap-ms = <300>;
                 };
