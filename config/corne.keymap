@@ -21,6 +21,10 @@
 
 // Definición de atajos
 #define CLIPBOARD (LC(LS(ES_Z)))
+#define ES_BACK (LA(ES_LEFT))
+#define ES_FORWARD (LA(ES_RIGHT))
+#define ES_UNDO (ES_Z)
+#define ES_REDO (ES_Y)
 
                 &lt {
                         quick-tap-ms = <300>;
