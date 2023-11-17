@@ -619,10 +619,12 @@
 /* Keyboard Again */
 #define K_AGAIN (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_AGAIN))
 #define K_REDO (K_AGAIN)
+#define ES_REDO (LC(ES_Y))
 
 /* Keyboard Undo */
 #define K_UNDO (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_UNDO))
 #define UNDO (K_UNDO) // WARNING: DEPRECATED (DO NOT USE)
+#define ES_UNDO (LC(ES_Z))
 
 /* Keyboard Cut */
 #define K_CUT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_CUT))
@@ -893,9 +895,11 @@
 
 /* Keyboard Back */
 #define K_BACK (ZMK_HID_USAGE(HID_USAGE_KEY, 0xF1))
+#define ES_BACK (LA(ES_LEFT))
 
 /* Keyboard Forward */
 #define K_FORWARD (ZMK_HID_USAGE(HID_USAGE_KEY, 0xF2))
+#define ES_FORWARD (LA(ES_RIGHT))
 
 /* Keyboard Stop */
 #define K_STOP3 (ZMK_HID_USAGE(HID_USAGE_KEY, 0xF3))
