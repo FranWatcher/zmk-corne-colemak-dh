@@ -53,6 +53,18 @@ combos {
   compatible = "zmk,combos";
   
   COMBO(GM, &kp ES_PIPE, 16 19)
+
+  COMBO(PB, &kp ES_ABRE_CORCH, 4 5)
+  COMBO(JL, &kp ES_CIERRA_CORCH, 6 7)
+
+  COMBO(PG, &kp ES_LPAR, 4 17)
+  COMBO(ML, &kp ES_RPAR, 18 7)
+
+  COMBO(DV, &kp ES_ABRE_LLAVE, 28 29)
+  COMBO(KH, &kp ES_CIERRA_LLAVE, 30 31)
+
+  COMBO(PH, &kp ES_BARRA_INV, 4 31)
+  COMBO(DL, &kp ES_BARRA, 28 7)
   
 };
 
