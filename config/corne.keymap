@@ -19,6 +19,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include "spanish.h"
 
+#define ES_BACK (LA(ES_LEFT))
+#define ES_FORWARD (LA(ES_RIGHT))
+#define ES_UNDO (LC(ES_Z))
+#define ES_REDO (LC(ES_Y))
+#define CLIPBOARD (LC(LS(ES_Z)))
+#define ES_FIND (LC(ES_F))
 
 
 
@@ -50,10 +56,10 @@
 //  | ESC | FUNCTIONS-RET | NUMBERS-TAB |       | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
                         bindings = <
 
-   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B       &kp ES_J  &kp ES_L        &kp ES_U        &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
-   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G       &kp ES_M  &hm RSHFT ES_N  &hm RCTRL ES_E  &hm LALT ES_I  &kp ES_O           &kp ES_AGUDO
-   &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V       &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
-                                  &kp ES_ESC     &lt FUNCTIONS ES_INTRO   &lt NUMBERS ES_TAB       &lt SYMBOLS BSPC   &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
+   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B         &kp ES_J  &kp ES_L        &kp ES_U        &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
+   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G         &kp ES_M  &hm RSHFT ES_N  &hm RCTRL ES_E  &hm LALT ES_I  &kp ES_O           &kp ES_AGUDO
+   &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V         &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
+                                  &kp ES_ESC     &lt FUNCTIONS ES_INTRO   &lt NUMBERS ES_TAB         &lt SYMBOLS BSPC   &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
                         >;
                 };
 
@@ -108,8 +114,8 @@
 //                          |  ESC  |  RET  | TAB   |            |     |       |       |
                         bindings = <
    &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &trans &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &trans
-   &kp K_BACK     &kp K_FIND   &kp LALT         &kp LCTRL       &kp LSHFT   &kp K_FORWARD              &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
-   &kp K_REDO     &kp K_UNDO   &kp K_CUT        &kp K_COPY      &kp BSPC    &kp K_PASTE                &trans &trans       &trans           &trans          &trans       &trans
+   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD             &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
+   &kp ES_REDO    &kp ES_UNDO  &kp K_CUT        &kp K_COPY      &kp BSPC    &kp K_PASTE                &trans &trans       &trans           &trans          &trans       &trans
                                                 &kp ESC         &kp RET     &kp TAB                    &trans &trans       &trans
                         >;
                 };
