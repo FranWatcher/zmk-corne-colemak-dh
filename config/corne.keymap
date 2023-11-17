@@ -11,7 +11,7 @@
 #define NAVIGATION 4
 #define MULTIMEDIA 5
 
-#define CLIPBOARD (LC(LS(ES_Z)))
+
 
 
 #include <behaviors.dtsi>
@@ -19,10 +19,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include "spanish.h"
 
+// Definición de atajos
+#define CLIPBOARD (LC(LS(ES_Z)))
 
                 &lt {
                         quick-tap-ms = <300>;
                 };
+
 / {
 
         behaviors {
@@ -86,12 +89,12 @@
 
                 functions_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |      |     |  F7  |  F8  |  F9  | F12 | F15 |
-// |     |     | ALT | CTR | SFT |     |      |     |  F4  |  F5  |  F6  | F11 | F14 |
-// |     | WIN |     |     |     |     |      |     |  F1  |  F2  |  F3  | F10 | F13 |
-//                   |     |     |     |      | BSPC | SPACE | DEL |
+// |     |     |     |     |     |     |      |      |  F7   |  F8  |  F9  | F12 | F15 |
+// |     |     | ALT | CTR | SFT |     |      |      |  F4   |  F5  |  F6  | F11 | F14 |
+// |     | WIN |     |     |     |     |      |      |  F1   |  F2  |  F3  | F10 | F13 |
+//                   |     |     |     |      | BSPC | SPACE | DEL  |
                         bindings = <
-   &trans &trans    &trans    &trans     &trans     &trans       &trans    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
+   &trans &trans    &trans    &trans     &trans     &trans       &tog    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
    &trans &trans    &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &trans    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
    &trans &kp LGUI  &trans    &trans     &trans     &trans       &trans    &kp ES_F1  &kp ES_F2   &kp ES_F3   &kp ES_F10  &kp ES_F13
                               &trans     &trans     &trans       &kp BSPC  &kp SPACE &kp DEL
@@ -100,15 +103,15 @@
 
                 navigation_layer {
 // -----------------------------------------------------------------------------------------
-// |  Clip  |  ini  |  PgDn |  PgUp |  fin  | Print |            |     |  ini  |  PgDn |  PgUp |  fin  |       |
+// |  Clip  |  ini  |  PgDn |  PgUp |  fin  | Print |            | NAV |  ini  |  PgDn |  PgUp |  fin  |       |
 // |  Back  | Find  |  ALT  |  CTR  |  SHF  | Fwrd  |            |     |   ←   |   ↓   |   ↑   |   →   |       |
 // |  ReDo  | UnDo  |  Cut  |  Copy |  BkSp | Paste |            |     |       |       |       |       |       |
 //                          |  ESC  |  RET  | TAB   |            |     |       |       |
                         bindings = <
-   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &trans &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &trans
-   &kp K_BACK     &kp K_FIND   &kp LALT         &kp LCTRL       &kp LSHFT   &kp K_FORWARD              &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
-   &kp K_REDO     &kp K_UNDO   &kp K_CUT        &kp K_COPY      &kp BSPC    &kp K_PASTE                &trans &trans       &trans           &trans          &trans       &trans
-                                                &kp ESC         &kp RET     &kp TAB                    &trans &trans       &trans
+   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN            &tog NAVIGATION &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &trans
+   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD                &trans          &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
+   &kp ES_REDO    &kp ES_UNDO  &kp K_CUT        &kp K_COPY      &kp BSPC    &kp K_PASTE                   &trans          &trans       &trans           &trans          &trans       &trans
+                                                &kp ESC         &kp RET     &kp TAB                       &trans          &trans       &trans
                         >;
                 };
 
