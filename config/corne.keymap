@@ -56,7 +56,7 @@
 combos {
   compatible = "zmk,combos";
   
-  COMBO(GM, &kp ES_PIPE, 16 19)
+  COMBO(GM, &kp ES_PIPE, 17 18)
 
   COMBO(PB, &kp ES_ABRE_CORCH, 4 5)
   COMBO(JL, &kp ES_CIERRA_CORCH, 6 7)
@@ -109,10 +109,10 @@ combos {
 // |  ·  |  \  |  #  |  ¡  |  ¿  |  €  |            |     |     |     |     |     |     |
 //                   | ESC | RET | TAB |            |     |     |     |
                         bindings = <
-   &kp ES_NOT      &kp ES_BARRA     &kp ES_PERCENT   &kp ES_ARROBA    &kp ES_COMILLAS &kp ES_DOLLAR       &trans &trans &trans &trans &trans &kp ES_ABRE_INTERROG
-   &kp ES_TILDE    &kp ES_PIPE      &kp ES_AMPERSAND &kp ES_EXCL      &kp ES_QMARK    &kp ES_IGUAL        &trans &trans &trans &trans &trans &kp ES_GRAVE
-   &kp ES_PUNTILLO &kp ES_BARRA_INV &kp ES_HASH      &kp ES_ABRE_EXCL &kp ES_LQMARK   &kp ES_EURO         &trans &trans &trans &trans &trans &trans
-                  &kp ES_ESC &kp ES_INTRO &kp ES_TAB                                                      &trans &trans &trans 
+   &kp ES_NOT      &kp ES_BARRA     &kp ES_PERCENT   &kp ES_ARROBA    &kp ES_COMILLAS &kp ES_DOLLAR       &none &none &none &none &none &kp ES_ABRE_INTERROG
+   &kp ES_TILDE    &kp ES_PIPE      &kp ES_AMPERSAND &kp ES_EXCL      &kp ES_QMARK    &kp ES_IGUAL        &none &none &none &none &none &kp ES_GRAVE
+   &kp ES_PUNTILLO &kp ES_BARRA_INV &kp ES_HASH      &kp ES_ABRE_EXCL &kp ES_LQMARK   &kp ES_EURO         &none &none &none &none &none &none
+                  &kp ES_ESC &kp ES_INTRO &kp ES_TAB                                                      &none &none &none 
                         >;
                 };
 
@@ -123,10 +123,10 @@ combos {
 // |     | WIN |     |     |     |     |        |  {  |  1  |  2  |  3  |  0  |  }  |
 //                   |     |     |     |        | BSPC | SPACE | DEL |
                         bindings = <
-   &trans &trans    &trans    &trans     &trans     &trans       &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
-   &trans &trans    &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
-   &trans &kp LGUI  &trans    &trans     &trans     &trans       &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
-                              &trans     &trans     &trans       &kp BSPC &kp SPACE &kp DEL
+   &none &none     &none     &none      &none      &none       &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
+   &none &none     &kp LALT  &kp LCTRL  &kp LSHFT  &none       &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
+   &none &kp LGUI  &none     &none      &none      &none       &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
+                             &none      &none      &none       &kp BSPC     &kp SPACE  &kp DEL
                         >;
                 };
 
@@ -138,10 +138,10 @@ combos {
 // |     | WIN |     |     |     |     |      |     |  F1  |  F2  |  F3  | F10 | F13 |
 //                   |     |     |     |      | BSPC | SPACE | DEL |
                         bindings = <
-   &trans &trans    &trans    &trans     &trans     &trans       &trans    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
-   &trans &trans    &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &trans    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
-   &trans &kp LGUI  &trans    &trans     &trans     &trans       &trans    &kp ES_F1  &kp ES_F2   &kp ES_F3   &kp ES_F10  &kp ES_F13
-                              &trans     &trans     &trans       &kp BSPC  &kp SPACE &kp DEL
+   &none  &none     &none     &none     &none     &none       &none    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
+   &none  &none     &kp LALT  &kp LCTRL &kp LSHFT &none       &none    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
+   &none  &kp LGUI  &none     &none     &none     &none       &none    &kp ES_F1  &kp ES_F2   &kp ES_F3   &kp ES_F10  &kp ES_F13
+                              &none     &none     &none       &kp BSPC  &kp SPACE &kp DEL
                         >;
                 };
 
@@ -152,10 +152,10 @@ combos {
 // |  ReDo  | UnDo  |  Cut  |  Copy |  BkSp | Paste |            |     |       |       |       |       |       |
 //                          |  ESC  |  RET  | TAB   |            |     |       |       |
                         bindings = <
-   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &trans &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &trans
-   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD             &trans &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &trans
-   &kp ES_REDO    &kp ES_UNDO  &kp ES_CUT       &kp ES_COPY     &kp BSPC    &kp ES_PASTE               &trans &trans       &trans           &trans          &trans       &trans
-                                                &kp ESC         &kp RET     &kp TAB                    &trans &trans       &trans
+   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &none &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &none
+   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD             &none &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &none
+   &kp ES_REDO    &kp ES_UNDO  &kp ES_CUT       &kp ES_COPY     &kp BSPC    &kp ES_PASTE               &none &none        &none            &none           &none        &none
+                                                &kp ESC         &kp RET     &kp TAB                    &none &none        &none
                         >;
                 };
 
@@ -181,9 +181,9 @@ combos {
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &kp LSHFT  &none       &none       &none       &none       &none         &none   &none   &none &none    &none &none
+                                    &kp LGUI     &none       &kp SPACE      &kp RET  &none   &kp RALT
                         >;
                 };
 
@@ -195,9 +195,9 @@ combos {
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp LCTRL &none   &none &none   &none   &none      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &none   &none &none   &none   &none      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                             &kp LGUI &none   &kp SPACE   &kp RET   &none    &kp RALT
                         >;
                 };
         };
