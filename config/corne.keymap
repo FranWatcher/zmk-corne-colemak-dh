@@ -69,7 +69,24 @@ combos {
 
   COMBO(PH, &kp ES_BARRA_INV, 4 31)
   COMBO(DL, &kp ES_BARRA, 28 7)
-  
+
+  accent_a_combo {
+            bindings = <&accent_a_macro>;
+            key-positions = <8 9>;
+  };
+
+  macros {
+        accent_a_macro: accent_a_macro {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_E>,
+                <&macro_release>
+        };
+    };
 };
 
         behaviors {
@@ -81,16 +98,7 @@ combos {
                     quick-tap-ms = <200>;
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
-                };
-
-                td0: tap_dance_0 {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_0";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp ES_E>, <&kp ES_AGUDO ES_E>, <&kp ES_N3>;
-                };
-                    
+                };  
         };
 
         keymap {
