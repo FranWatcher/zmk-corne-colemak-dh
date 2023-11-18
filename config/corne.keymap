@@ -52,6 +52,19 @@
 //                   |  36 |  37 |  38 |            |  39 |  40 |  41 |
 
 
+  macros {
+        accent_a_macro: accent_a_macro {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_E>,
+                <&macro_release>
+        };
+    };
+
 
 combos {
   compatible = "zmk,combos";
@@ -74,19 +87,6 @@ combos {
             bindings = <&accent_a_macro>;
             key-positions = <8 9>;
   };
-
-  macros {
-        accent_a_macro: accent_a_macro {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&macro_tap>,
-                <&kp ES_AGUDO &kp ES_E>,
-                <&macro_release>
-        };
-    };
 };
 
         behaviors {
