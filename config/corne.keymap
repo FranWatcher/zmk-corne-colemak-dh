@@ -94,7 +94,7 @@ combos {
                     quick-tap-ms = <200>;
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
-                }, 
+                };
 
                 td_e: tap_dance_e {
                     compatible = "zmk,behavior-tap-dance";
