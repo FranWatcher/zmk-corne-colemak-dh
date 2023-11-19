@@ -82,11 +82,7 @@ combos {
 
   COMBO(PH, &kp ES_BARRA_INV, 4 31)
   COMBO(DL, &kp ES_BARRA, 28 7)
-
-  accent_a_combo {
-            bindings = <&accent_a_macro>;
-            key-positions = <8 9>;
-  };
+  COMBO(ACENT, &accent_a_macro, 8 9)
 };
 
         behaviors {
