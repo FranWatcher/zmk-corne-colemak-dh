@@ -10,6 +10,7 @@
 #define FUNCTIONS 3
 #define NAVIGATION 4
 #define MULTIMEDIA 5
+#define ACENTOS 6
 
 #define CLIPBOARD (LC(LS(ES_Z)))
 
@@ -43,6 +44,11 @@
                 &lt {
                         quick-tap-ms = <300>;
                 };
+
+                &sl {
+                    release-after-ms = <500>;
+                };
+
 / {
 
 // -----------------------------------------------------------------------------------------
@@ -134,51 +140,51 @@ combos {
                     compatible = "zmk,behavior-hold-tap";
                     label = "HOMEROW_MODS";
                     #binding-cells = <2>;
-                    tapping-term-ms = <300>;
+                    tapping-term-ms = <200>;
                     quick-tap-ms = <200>;
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
 
-                td_a: tap_dance_a {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_A";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp ES_A>, <&accent_a>;
-                };
+//                td_a: tap_dance_a {
+//                    compatible = "zmk,behavior-tap-dance";
+//                    label = "TAP_DANCE_A";
+//                    #binding-cells = <0>;
+//                    tapping-term-ms = <200>;
+//                    bindings = <&kp ES_A>, <&accent_a>;
+//                };
 
-                td_e: tap_dance_e {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_E";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&hm RCTRL ES_E>, <&accent_e>;
-                };
+//                td_e: tap_dance_e {
+//                    compatible = "zmk,behavior-tap-dance";
+//                    label = "TAP_DANCE_E";
+//                    #binding-cells = <0>;
+//                    tapping-term-ms = <200>;
+//                    bindings = <&hm RCTRL ES_E>, <&accent_e>;
+//                };
 
-                td_i: tap_dance_i {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_I";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&hm LALT ES_I>, <&accent_i>;
-                };
+//                td_i: tap_dance_i {
+//                    compatible = "zmk,behavior-tap-dance";
+//                    label = "TAP_DANCE_I";
+//                    #binding-cells = <0>;
+//                    tapping-term-ms = <200>;
+//                    bindings = <&hm LALT ES_I>, <&accent_i>;
+//                };
 
-                td_o: tap_dance_o {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_O";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp ES_O>, <&accent_o>;
-                };
+//                td_o: tap_dance_o {
+//                    compatible = "zmk,behavior-tap-dance";
+//                    label = "TAP_DANCE_O";
+//                    #binding-cells = <0>;
+//                    tapping-term-ms = <200>;
+//                    bindings = <&kp ES_O>, <&accent_o>;
+//                };
 
-                td_u: tap_dance_u {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_U";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp ES_U>, <&accent_u>;
-                };
+//                td_u: tap_dance_u {
+//                    compatible = "zmk,behavior-tap-dance";
+//                    label = "TAP_DANCE_U";
+//                    #binding-cells = <0>;
+//                    tapping-term-ms = <200>;
+//                    bindings = <&kp ES_U>, <&accent_u>;
+//                };
 
 
 
@@ -195,8 +201,8 @@ combos {
 //  | ESC | FUNCTIONS-RET | NUMBERS-TAB |       | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
                         bindings = <
 
-   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B         &kp ES_J  &kp ES_L        &td_u           &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
-   &kp ES_CAPS     &td_a          &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G         &kp ES_M  &hm RSHFT ES_N  &td_e           &td_i          &td_o              &kp ES_AGUDO
+   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B         &kp ES_J  &kp ES_L        &ES_U           &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
+   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G         &kp ES_M  &hm RSHFT ES_N  &hm RCTRL ES_E  &hm LALT ES_I  &ES_O              &sl ACENTOS
    &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V         &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
                                   &kp ES_ESC     &lt FUNCTIONS ES_INTRO   &lt NUMBERS ES_TAB         &lt SYMBOLS BSPC   &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
                         >;
@@ -273,17 +279,18 @@ combos {
                         >;
                 };
 
-                low_layer {
+                acentos_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-   &kp LSHFT  &none       &none       &none       &none       &none         &none   &none   &none &none    &none &none
-                                    &kp LGUI     &none       &kp SPACE      &kp RET  &none   &kp RALT
+// |     |     |     |     |     |     |        |     |     |  ú  |     |     |     |
+// |     |  á  |     |     |     |     |        |     |     |  é  |  í  |  ó  |     |
+// |     |     |     |     |     |     |        |     |     |     |     |     |     |
+//                   |     |     |     |        |     |     |     |
+
+bindings = <
+   &none  &none      &none  &none  &none  &none        &none  &none  &accent_u  &none      &none      &none
+   &none  &accent_a  &none  &none  &none  &none        &none  &none  &accent_e  &accent_i  &accent_o  &none
+   &none  &none      &none  &none  &none  &none        &none  &none  &none      &none      &none      &none
+                        &none  &none  &none        &none  &none  &none
                         >;
                 };
 
