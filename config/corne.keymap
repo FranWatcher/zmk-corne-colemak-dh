@@ -61,7 +61,7 @@
                 <&macro_press>,
                 <&macro_tap>,
                 <&kp ES_AGUDO &kp ES_E>,
-                <&macro_release>
+                <&macro_release>;
         };
     };
 
