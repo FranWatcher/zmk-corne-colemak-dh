@@ -161,7 +161,7 @@ combos {
                     label = "TAP_DANCE_I";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&hm LATL ES_I>, <&accent_i>;
+                    bindings = <&hm LALT ES_I>, <&accent_i>;
                 };
 
                 td_o: tap_dance_o {
