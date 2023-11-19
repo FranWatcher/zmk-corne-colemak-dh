@@ -174,7 +174,7 @@ combos {
 
                 td_u: tap_dance_u {
                     compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_I";
+                    label = "TAP_DANCE_U";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&kp ES_U>, <&accent_u>;
