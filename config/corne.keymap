@@ -99,7 +99,7 @@ combos {
                 td_e: tap_dance_e {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_E";
-                    #binding-cells = <20>;
+                    #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&hm RCTRL ES_E>, <&accent_a_macro>;
                 };
