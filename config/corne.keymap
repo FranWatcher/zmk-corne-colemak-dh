@@ -53,14 +53,58 @@
 
 
   macros {
-        accent_a_macro: accent_a_macro {
+        accent_a: acento_a {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "macro acento a";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_A>,
+                <&macro_release>;
+        };
+
+        accent_e: acento_e {
+            compatible = "zmk,behavior-macro";
+            label = "macro acento e";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&macro_tap>,
                 <&kp ES_AGUDO &kp ES_E>,
+                <&macro_release>;
+        };
+
+        accent_i: acento_i {
+            compatible = "zmk,behavior-macro";
+            label = "macro acento i";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_I>,
+                <&macro_release>;
+        };
+
+        accent_o: acento_o {
+            compatible = "zmk,behavior-macro";
+            label = "macro acento o";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_O>,
+                <&macro_release>;
+        };
+
+        accent_u: acento_u {
+            compatible = "zmk,behavior-macro";
+            label = "macro acento u";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&macro_tap>,
+                <&kp ES_AGUDO &kp ES_U>,
                 <&macro_release>;
         };
     };
@@ -82,7 +126,7 @@ combos {
 
   COMBO(PH, &kp ES_BARRA_INV, 4 31)
   COMBO(DL, &kp ES_BARRA, 28 7)
-  COMBO(ACENT, &accent_a_macro, 8 9)
+
 };
 
         behaviors {
@@ -96,13 +140,47 @@ combos {
                     bindings = <&kp>, <&kp>;
                 };
 
+                td_a: tap_dance_a {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_A";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp ES_A>, <&accent_a>;
+                };
+
                 td_e: tap_dance_e {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_E";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
-                    bindings = <&hm RCTRL ES_E>, <&accent_a_macro>;
+                    bindings = <&hm RCTRL ES_E>, <&accent_e>;
                 };
+
+                td_i: tap_dance_i {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_I";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&hm LATL ES_I>, <&accent_i>;
+                };
+
+                td_o: tap_dance_o {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_O";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp ES_O>, <&accent_o>;
+                };
+
+                td_u: tap_dance_u {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_I";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp ES_U>, <&accent_u>;
+                };
+
+
 
         };
 
@@ -117,8 +195,8 @@ combos {
 //  | ESC | FUNCTIONS-RET | NUMBERS-TAB |       | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
                         bindings = <
 
-   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B         &kp ES_J  &kp ES_L        &kp ES_U        &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
-   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G         &kp ES_M  &hm RSHFT ES_N  &td_e  &hm LALT ES_I  &kp ES_O           &kp ES_AGUDO
+   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F           &kp ES_P        &kp ES_B         &kp ES_J  &kp ES_L        &td_u           &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
+   &kp ES_CAPS     &td_a          &hm LALT ES_R  &hm LCTRL ES_S     &hm LSHFT ES_T  &kp ES_G         &kp ES_M  &hm RSHFT ES_N  &td_e           &td_i          &td_o              &kp ES_AGUDO
    &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C           &kp ES_D        &kp ES_V         &kp ES_K  &kp ES_H        &kp ES_COMA     &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
                                   &kp ES_ESC     &lt FUNCTIONS ES_INTRO   &lt NUMBERS ES_TAB         &lt SYMBOLS BSPC   &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
                         >;
