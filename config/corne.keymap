@@ -58,6 +58,25 @@
 //                   |  36 |  37 |  38 |            |  39 |  40 |  41 |
 
 
+combos {
+  compatible = "zmk,combos";
+  
+  COMBO(GM, &kp ES_PIPE, 17 18)
+
+  COMBO(PB, &kp ES_ABRE_CORCH, 4 5)
+  COMBO(JL, &kp ES_CIERRA_CORCH, 6 7)
+
+  COMBO(PG, &kp ES_LPAR, 4 17)
+  COMBO(ML, &kp ES_RPAR, 18 7)
+
+  COMBO(DV, &kp ES_ABRE_LLAVE, 28 29)
+  COMBO(KH, &kp ES_CIERRA_LLAVE, 30 31)
+
+  COMBO(PH, &kp ES_BARRA_INV, 4 31)
+  COMBO(DL, &kp ES_BARRA, 28 7)
+
+};
+
   macros {
         accent_a: acento_a {
             compatible = "zmk,behavior-macro";
@@ -115,26 +134,6 @@
         };
     };
 
-
-combos {
-  compatible = "zmk,combos";
-  
-  COMBO(GM, &kp ES_PIPE, 17 18)
-
-  COMBO(PB, &kp ES_ABRE_CORCH, 4 5)
-  COMBO(JL, &kp ES_CIERRA_CORCH, 6 7)
-
-  COMBO(PG, &kp ES_LPAR, 4 17)
-  COMBO(ML, &kp ES_RPAR, 18 7)
-
-  COMBO(DV, &kp ES_ABRE_LLAVE, 28 29)
-  COMBO(KH, &kp ES_CIERRA_LLAVE, 30 31)
-
-  COMBO(PH, &kp ES_BARRA_INV, 4 31)
-  COMBO(DL, &kp ES_BARRA, 28 7)
-
-};
-
         behaviors {
                 hm: homerow_mods {
                     compatible = "zmk,behavior-hold-tap";
@@ -145,48 +144,6 @@ combos {
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
-
-//                td_a: tap_dance_a {
-//                    compatible = "zmk,behavior-tap-dance";
-//                    label = "TAP_DANCE_A";
-//                    #binding-cells = <0>;
-//                    tapping-term-ms = <200>;
-//                    bindings = <&kp ES_A>, <&accent_a>;
-//                };
-
-//                td_e: tap_dance_e {
-//                    compatible = "zmk,behavior-tap-dance";
-//                    label = "TAP_DANCE_E";
-//                    #binding-cells = <0>;
-//                    tapping-term-ms = <200>;
-//                    bindings = <&hm RCTRL ES_E>, <&accent_e>;
-//                };
-
-//                td_i: tap_dance_i {
-//                    compatible = "zmk,behavior-tap-dance";
-//                    label = "TAP_DANCE_I";
-//                    #binding-cells = <0>;
-//                    tapping-term-ms = <200>;
-//                    bindings = <&hm LALT ES_I>, <&accent_i>;
-//                };
-
-//                td_o: tap_dance_o {
-//                    compatible = "zmk,behavior-tap-dance";
-//                    label = "TAP_DANCE_O";
-//                    #binding-cells = <0>;
-//                    tapping-term-ms = <200>;
-//                    bindings = <&kp ES_O>, <&accent_o>;
-//                };
-
-//                td_u: tap_dance_u {
-//                    compatible = "zmk,behavior-tap-dance";
-//                    label = "TAP_DANCE_U";
-//                    #binding-cells = <0>;
-//                    tapping-term-ms = <200>;
-//                    bindings = <&kp ES_U>, <&accent_u>;
-//                };
-
-
 
         };
 
