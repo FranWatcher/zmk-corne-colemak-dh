@@ -148,58 +148,58 @@ keymap {
 
         default_layer {
 // -----------------------------------------------------------------------------------------
-// |  º   |  Q  |  W  |  F  |  P  |  B  |       |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
-// | CAPS |  A  |  R  |  S  |  T  |  G  |       |  M  |  N  |  E  |  I  |  O  |  ´  |
-// |  <   |  Z  |  X  |  C  |  D  |  V  |       |  K  |  H  |  ,  |  .  |  -  |  +  |
-//  | ESC | FUNCTIONS-RET | NUMBERS-TAB |       | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
+// |  º   |  Q  |  W  |  F  |  P  |  B  |             |  J  |  L  |  U  |  Y  |  Ñ  |  '  |
+// | CAPS |  A  |  R  |  S  |  T  |  G  |             |  M  |  N  |  E  |  I  |  O  |  ´  |
+// |  <   |  Z  |  X  |  C  |  D  |  V  |             |  K  |  H  |  ,  |  .  |  -  |  +  |
+//  | ESC | FUNCTIONS-RET | NUMBERS-TAB |             | SYMBOLS-BSPC | NAVIGATION-SPACE | MULTIMEDIA-DEL |
                         bindings = <
-   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F              &kp ES_P                &kp ES_B                   &kp ES_J          &kp ES_L               &kp ES_U           &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
-   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S        &hm LSHFT ES_T          &kp ES_G                   &kp ES_M          &hm RSHFT ES_N         &hm RCTRL ES_E     &hm LALT ES_I  &kp ES_O           &sl ACENTOS
-   &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C              &kp ES_D                &kp ES_V                   &kp ES_K          &kp ES_H               &kp ES_COMA        &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
-                                                 &lt BLUETOOTH ES_ESC  &lt FUNCTIONS ES_INTRO  &lt NUMBERS ES_TAB         &lt SYMBOLS BSPC  &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
+   &kp ES_ORDINAL  &kp ES_Q       &kp ES_W       &kp ES_F              &kp ES_P                &kp ES_B                     &kp ES_J          &kp ES_L               &kp ES_U           &kp ES_Y       &kp ES_ENHE        &kp ES_APOSTROFE
+   &kp ES_CAPS     &kp ES_A       &hm LALT ES_R  &hm LCTRL ES_S        &hm LSHFT ES_T          &kp ES_G                     &kp ES_M          &hm RSHFT ES_N         &hm RCTRL ES_E     &hm LALT ES_I  &kp ES_O           &sl ACENTOS
+   &kp ES_MENOR    &hm LGUI ES_Z  &kp ES_X       &kp ES_C              &kp ES_D                &kp ES_V                     &kp ES_K          &kp ES_H               &kp ES_COMA        &kp ES_PUNTO   &hm RGUI ES_MENOS  &kp ES_MAS
+                                                 &lt BLUETOOTH ES_ESC  &lt FUNCTIONS ES_INTRO  &lt NUMBERS ES_TAB           &lt SYMBOLS BSPC  &lt NAVIGATION SPACE   &lt MULTIMEDIA DEL
                         >;
                 };
 
                 symbols_layer {
 // -----------------------------------------------------------------------------------------
-// |  ¬  |  /  |  %  |  @  |  "  |  $  |            |     |     |     |     |     |  ¿  |
-// |  ^  |  |  |  &  |  !  |  ?  |  =  |            |     |     |     |     |     |     |
-// |  ·  |  \  |  #  |  ¡  |  ¿  |  €  |            |     |     |     |     |     |     |
-//                   | ESC | RET | TAB |            |     |     |     |
+// |  ¬  |  /  |  %  |  @  |  "  |  $  |              |     |     |     |     |     |  ¿  |
+// |  ^  |  |  |  &  |  !  |  ?  |  =  |              |     |     |     |     |     |     |
+// |  ·  |  \  |  #  |  ¡  |  ¿  |  €  |              |     |     |     |     |     |     |
+//                   | ESC | RET | TAB |              |     |     |     |
                         bindings = <
-   &kp ES_NOT      &kp ES_BARRA     &kp ES_PERCENT   &kp ES_ARROBA    &kp ES_COMILLAS &kp ES_DOLLAR       &none &none &none &none &none &kp ES_ABRE_INTERROG
-   &kp ES_TILDE    &kp ES_PIPE      &kp ES_AMPERSAND &kp ES_EXCL      &kp ES_QMARK    &kp ES_IGUAL        &none &none &none &none &none &kp ES_GRAVE
-   &kp ES_PUNTILLO &kp ES_BARRA_INV &kp ES_HASH      &kp ES_ABRE_EXCL &kp ES_LQMARK   &kp ES_EURO         &none &none &none &none &none &none
-                  &kp ES_ESC &kp ES_INTRO &kp ES_TAB                                                      &none &none &none 
+   &kp ES_NOT      &kp ES_BARRA     &kp ES_PERCENT   &kp ES_ARROBA    &kp ES_COMILLAS &kp ES_DOLLAR           &none &none &none &none &none &kp ES_ABRE_INTERROG
+   &kp ES_TILDE    &kp ES_PIPE      &kp ES_AMPERSAND &kp ES_EXCL      &kp ES_QMARK    &kp ES_IGUAL            &none &none &none &none &none &kp ES_GRAVE
+   &kp ES_PUNTILLO &kp ES_BARRA_INV &kp ES_HASH      &kp ES_ABRE_EXCL &kp ES_LQMARK   &kp ES_EURO             &none &none &none &none &none &none
+                                                     &kp ES_ESC       &kp ES_INTRO    &kp ES_TAB              &none &none &none 
                         >;
                 };
 
                 numbers_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |        |  [  |  7  |  8  |  9  |  /  |  ]  |
-// |     |     | ALT | CTR | SFT |     |        |  (  |  4  |  5  |  6  |  \  |  )  |
-// |     | WIN |     |     |     |     |        |  {  |  1  |  2  |  3  |  0  |  }  |
-//                   |     |     |     |        | BSPC | SPACE | DEL |
+// |     |     |     |     |     |     |             |  [  |  7  |  8  |  9  |  /  |  ]  |
+// |     |     | ALT | CTR | SFT |     |             |  (  |  4  |  5  |  6  |  \  |  )  |
+// |     | WIN |     |     |     |     |             |  {  |  1  |  2  |  3  |  0  |  }  |
+//                   |     |     |     |             | BSPC | SPACE | DEL |
                         bindings = <
-   &none &none     &none     &none      &none      &none       &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
-   &none &none     &kp LALT  &kp LCTRL  &kp LSHFT  &none       &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
-   &none &kp LGUI  &none     &none      &none      &none       &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
-                             &none      &none      &none       &kp BSPC     &kp SPACE  &kp DEL
+   &none &none     &none     &none      &none      &none             &kp ES_LBKT  &kp ES_N7  &kp ES_N8   &kp ES_N9   &kp ES_SLASH  &kp ES_RBKT
+   &none &none     &kp LALT  &kp LCTRL  &kp LSHFT  &none             &kp ES_LPAR  &kp ES_N4  &kp ES_N5   &kp ES_N6   &kp ES_BSLH   &kp ES_RPAR
+   &none &kp LGUI  &none     &none      &none      &none             &kp ES_LBRC  &kp ES_N1  &kp ES_N2   &kp ES_N3   &kp ES_N0     &kp ES_RBRC
+                             &none      &none      &none             &kp BSPC     &kp SPACE  &kp DEL
                         >;
                 };
 
 
                 functions_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |      |     |  F7  |  F8  |  F9  | F12 | F15 |
-// |     |     | ALT | CTR | SFT |     |      |     |  F4  |  F5  |  F6  | F11 | F14 |
-// |     | WIN |     |     |     |     |      |     |  F1  |  F2  |  F3  | F10 | F13 |
-//                   |     |     |     |      | BSPC | SPACE | DEL |
+// |     |     |     |     |     |     |             |      |  F7   |  F8  |  F9  | F12 | F15 |
+// |     |     | ALT | CTR | SFT |     |             |      |  F4   |  F5  |  F6  | F11 | F14 |
+// |     | WIN |     |     |     |     |             |      |  F1   |  F2  |  F3  | F10 | F13 |
+//                   |     |     |     |             | BSPC | SPACE | DEL  |
                         bindings = <
-   &none  &none     &none     &none     &none     &none       &none    &kp ES_F7  &kp ES_F8   &kp ES_F9   &kp ES_F12  &kp ES_F15
-   &none  &none     &kp LALT  &kp LCTRL &kp LSHFT &none       &none    &kp ES_F4  &kp ES_F5   &kp ES_F6   &kp ES_F11  &kp ES_F14
-   &none  &kp LGUI  &none     &none     &none     &none       &none    &kp ES_F1  &kp ES_F2   &kp ES_F3   &kp ES_F10  &kp ES_F13
-                              &none     &none     &none       &kp BSPC  &kp SPACE &kp DEL
+   &none  &none     &none     &none     &none     &none            &none     &kp ES_F7  &kp ES_F8  &kp ES_F9  &kp ES_F12  &kp ES_F15
+   &none  &none     &kp LALT  &kp LCTRL &kp LSHFT &none            &none     &kp ES_F4  &kp ES_F5  &kp ES_F6  &kp ES_F11  &kp ES_F14
+   &none  &kp LGUI  &none     &none     &none     &none            &none     &kp ES_F1  &kp ES_F2  &kp ES_F3  &kp ES_F10  &kp ES_F13
+                              &none     &none     &none            &kp BSPC  &kp SPACE  &kp DEL
                         >;
                 };
 
@@ -210,54 +210,54 @@ keymap {
 // |  ReDo  | UnDo  |  Cut  |  Copy |  BkSp | Paste |            |     |       |       |       |       |       |
 //                          |  ESC  |  RET  | TAB   |            |     |       |       |
                         bindings = <
-   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN         &none &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &none
-   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD             &none &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &none
-   &kp ES_REDO    &kp ES_UNDO  &kp ES_CUT       &kp ES_COPY     &kp BSPC    &kp ES_PASTE               &none &none        &none            &none           &none        &none
-                                                &kp ESC         &kp RET     &kp TAB                    &none &none        &none
+   &kp CLIPBOARD  &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END  &kp ES_PRINTSCREEN           &none &kp ES_HOME  &kp ES_PAGE_DOWN &kp ES_PAGE_UP  &kp ES_END   &none
+   &kp ES_BACK    &kp ES_FIND  &kp LALT         &kp LCTRL       &kp LSHFT   &kp ES_FORWARD               &none &kp ES_LEFT  &kp ES_DOWN      &kp ES_UP       &kp ES_RIGHT &none
+   &kp ES_REDO    &kp ES_UNDO  &kp ES_CUT       &kp ES_COPY     &kp BSPC    &kp ES_PASTE                 &none &none        &none            &none           &none        &none
+                                                &kp ESC         &kp RET     &kp TAB                      &none &none        &none
                         >;
                 };
 
                 multimedia_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     | ADELANTE | NEXT  | +VOL | +BRI |        |     |     |     |     |     |     |
-// |     |     |          | PAUSE | MUTE |      |        |     |     |     |     |     |     |
-// |     |     | ATRAS    | PREV  | -VOL | -BRI |        |     |     |     |     |     |     |
-//                        |            |      |      |        |     |     |     |
+// |     |     | ADELANTE | NEXT  | +VOL | +BRI |            |     |     |     |     |     |     |
+// |     |     |          | PAUSE | MUTE |      |            |     |     |     |     |     |     |
+// |     |     | ATRAS    | PREV  | -VOL | -BRI |            |     |     |     |     |     |     |
+//                        |       |      |      |            |     |     |     |
 
 bindings = <
-   &none  &none  &kp C_FF  &kp C_NEXT  &kp C_VOL_UP  &kp C_BRI_UP        &none  &none  &none  &none  &none  &none
-   &none  &none  &none     &kp C_PP    &kp C_MUTE    &none               &none  &none  &none  &none  &none  &none
-   &none  &none  &kp C_RW  &kp C_PREV  &kp C_VOL_DN  &kp C_BRI_DN        &none  &none  &none  &none  &none  &none
-                           &none       &none         &none               &none  &none  &none
+   &none  &none  &kp C_FF  &kp C_NEXT  &kp C_VOL_UP  &kp C_BRI_UP          &none  &none  &none  &none  &none  &none
+   &none  &none  &none     &kp C_PP    &kp C_MUTE    &none                 &none  &none  &none  &none  &none  &none
+   &none  &none  &kp C_RW  &kp C_PREV  &kp C_VOL_DN  &kp C_BRI_DN          &none  &none  &none  &none  &none  &none
+                           &none       &none         &none                 &none  &none  &none
                         >;
                 };
 
                 acentos_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |        |     |     |  ú  |     |     |     |
-// |     |  á  |     |     |     |     |        |     |     |  é  |  í  |  ó  |     |
-// |     |     |     |     |     |     |        |     |     |     |     |     |     |
-//                   |     |     |     |        |     |     |     |
+// |     |     |     |     |     |     |            |     |     |  ú  |     |     |     |
+// |     |  á  |     |     |     |     |            |     |     |  é  |  í  |  ó  |     |
+// |     |     |     |     |     |     |            |     |     |     |     |     |     |
+//                   |     |     |     |            |     |     |     |
 
 bindings = <
-   &trans  &trans     &trans  &trans  &trans  &trans        &trans  &trans  &accent_u  &trans     &trans     &trans
-   &trans  &accent_a  &trans  &trans  &trans  &trans        &trans  &trans  &accent_e  &accent_i  &accent_o  &trans
-   &trans  &trans     &trans  &trans  &trans  &trans        &trans  &trans  &trans     &trans     &trans     &trans
-                              &trans  &trans  &trans        &trans  &trans  &trans
+   &trans  &trans     &trans  &trans  &trans  &trans             &trans  &trans  &accent_u  &trans     &trans     &trans
+   &trans  &accent_a  &trans  &trans  &trans  &trans             &trans  &trans  &accent_e  &accent_i  &accent_o  &trans
+   &trans  &trans     &trans  &trans  &trans  &trans             &trans  &trans  &trans     &trans     &trans     &trans
+                              &trans  &trans  &trans             &trans  &trans  &trans
                         >;
                 };
 
                 bluetooth_layer {
 // -----------------------------------------------------------------------------------------
-// |    |    |    |    |    |    |          | NEXT  |      |      |      |    |    |
-// |    |    |    |    |    |    |          | CLEAR | BT-4 | BT-5 |      |    |    |
-// |    |    |    |    |    |    |          | PREV  | BT-1 | BT-2 | BT-3 |    |    |
-//                |    |    |    |          |       |      |      |
+// |    |    |    |    |    |    |             | NEXT  |      |      |      |    |    |
+// |    |    |    |    |    |    |             | CLEAR | BT-4 | BT-5 |      |    |    |
+// |    |    |    |    |    |    |             | PREV  | BT-1 | BT-2 | BT-3 |    |    |
+//                |    |    |    |             |       |      |      |
                         bindings = <
-   &none  &none  &none  &none  &none  &none          &bt BT_NXT  &none         &none         &none         &none  &none
-   &none  &none  &none  &none  &none  &none          &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none  &none
-   &none  &none  &none  &none  &none  &none          &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none
-                        &none  &none  &none          &none       &none         &none
+   &none  &none  &none  &none  &none  &none             &bt BT_NXT  &none         &none         &none         &none  &none
+   &none  &none  &none  &none  &none  &none             &bt BT_CLR  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none  &none
+   &none  &none  &none  &none  &none  &none             &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none
+                        &none  &none  &none             &none       &none         &none
    
                         >;
                 };
